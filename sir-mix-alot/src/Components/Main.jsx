@@ -6,9 +6,10 @@ export default function Main () {
             <h1>Sir Mix-Alot</h1>
             <h3>Lets find your perfect Mix</h3>
             </header>
-        <footer>
+        
         <h6>Please enter your cocktail or liquor of choice below:</h6>
-        </footer>
+        
+        
         </div>
     )
 }

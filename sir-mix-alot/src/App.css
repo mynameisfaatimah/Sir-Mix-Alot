@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+img {
+  max-width:150px;
+  margin: 2px;
+}
+.bg {
+  background-image: url(./Image/RedRoom.JPG);
+  width: 200px; 
+  height: 200px;
+  background-size: cover;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +46,4 @@
     transform: rotate(360deg);
   }
 }
+
