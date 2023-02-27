@@ -1,10 +1,27 @@
 import './App.css';
-import Main from './Components/Main'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
+import {BASE_URL} from './CocktailData'
 import SearchBar from './Components/SearchBar'
-import CocktailData from './CocktailData'
+import Main from './Components/Main'
 
 
-function App() {
+
+
+const App = () => {
+
+  const [cocktail, setCocktails] = useState([])
+  //const [selectedCocktail, setSelectedCocktail] = useState(null)
+
+  useEffect(() => {
+    const getCocktails = async () => {
+      const response = await axios.get('${BASE_URL}/api.api-ninjas.com/v1/cocktail?name=api_key=${process.env.REACT_APP_API_KEY}')
+    }
+ 
+
+    getCocktails()
+  }, [])
+
   return (
     <div className="App">
       <Main />

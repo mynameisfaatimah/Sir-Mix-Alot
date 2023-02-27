@@ -7,7 +7,7 @@ export default function Main () {
             <h3>Lets find your perfect Mix</h3>
             </header>
         <footer>
-        <h4>Please enter your cocktail or liquor of choice</h4>
+        <h6>Please enter your cocktail or liquor of choice below:</h6>
         </footer>
         </div>
     )
