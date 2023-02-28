@@ -8,31 +8,35 @@ import Main from './Components/Main'
 //import CocktailList from './Components/CocktailList';
 
 
-
-
 const App = () => {
 
   const [cocktail, setCocktails] = useState([])
   //const [selectedCocktail, setSelectedCocktail] = useState(null)
-const choice ='rum'
+const [choice, setChoice] = useState([])
   useEffect(() => {
     const getCocktails = async () => {
-      const response = await axios.get(`${BASE_URL}${choice}`,{headers: { 'X-Api-Key':process.env.REACT_APP_API_KEY}})
+      const response = await axios.get(`${BASE_URL}${choice[""]}`,{headers: { 'X-Api-Key':process.env.REACT_APP_API_KEY}})
     
       console.log(response.data)
     }
 
 
     getCocktails()
-  }, [])
+  }, [choice])
+  const handleChange = (e) => {
+    //console.log(choice)
+    setChoice({...choice,[e.target.id]: e.target.value})
 
+
+}
   return (
     <div className="App">
       <div className="Main">
       <Main />
       </div>
       
-      <SearchBar placeholder="Baby got Yak!" />
+      <SearchBar placeholder="Baby got Yak!" choice={choice} 
+      handleChange={handleChange}/>
 
 
     </div>
