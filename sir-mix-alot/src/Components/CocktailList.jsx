@@ -1,6 +1,6 @@
 import Nav from './Nav'
 
-export default function CocktailList (){
+export default function CocktailList (props){
         return(
             <div>
                 <div className= "header-title">
@@ -11,6 +11,20 @@ export default function CocktailList (){
                 < div className="nav-container">
                     <Nav />
                 </div>
+                {
+                 props.cocktails.map((cocktail) =>
+                 (
+                    <div key={cocktail} classname="card">
+                        <h1>{cocktail.name}</h1>
+                          <p>{cocktail.instructions}</p>
+                        <uo>
+                            <li>{cocktail.ingredients}</li>
+                        </uo>
+                            <button>Select Cocktail</button>
+                    </div>
+                    
+                 ))   
+                }
             </div>
         )
 }
