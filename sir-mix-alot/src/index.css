@@ -18,10 +18,17 @@ body {
     margin: 0;
 }
 .header-container{
-display: block;
+display: grid;
 width: 100%;
 margin-bottom: 60px;
 text-align:center;
+backdrop-filter: blur(8px);
+box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+}
+.main-container{
+  display: grid;
+  box-shadow: 0 3000px rgba(20, 7, 7, 0.4) inset;
+  backdrop-filter: blur(8px);
 }
 
 ::-webkit-scrollbar {
