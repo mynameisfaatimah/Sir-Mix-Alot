@@ -8,13 +8,16 @@ return (
 
     < div className= "search">
         <div className="searchInputs">
+            <form>
             <input type="text"  
             value={choice[""]}
             onChange={handleChange}
-            placeholder={placeholder}/>
+            placeholder={placeholder}
+            />
             <button className="searchIcon" onClick={handleClick}>
                 <SearchIcon />
             </button>
+          </form>
         </div>
         <div className="dataResult">
         </div>
