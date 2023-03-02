@@ -4,6 +4,7 @@ import axios from 'axios'
 import {BASE_URL} from './CocktailData'
 import { Route, Routes } from 'react-router-dom';
 import SearchBar from './Components/SearchBar'
+import { useNavigate } from 'react-router-dom';
 import Main from './Components/Main'
 //import Image from './Image/RedRoom.JPG'
 import CocktailList from './Components/CocktailList';
@@ -14,24 +15,30 @@ const App = () => {
   const [cocktails, setCocktails] = useState([])
   //const [selectedCocktail, setSelectedCocktail] = useState(null)
 const [choice, setChoice] = useState([])
-  useEffect(() => {
-    const getCocktails = async () => {
-      const response = await axios.get(`${BASE_URL}${choice[""]}`,{headers: { 'X-Api-Key':process.env.REACT_APP_API_KEY}})
-    
-      console.log(response.data)
-      //setCocktails(response.data)
-    }
-    getCocktails()
-  }, [choice])
+  //useEffect(() => {}, [choice])
 
   const handleChange = (e) => {
     //console.log(choice)
     setChoice({...choice,[e.target.id]: e.target.value})
-
-
-
+    
 
 }
+
+let navigate = useNavigate()
+
+
+ 
+
+const handleClick = (e) => {
+  console.log(choice)
+    navigate(`/CocktailList/${choice[""]}`)
+  
+  
+  }
+
+
+
+
   return (
     <div className="App">
       
@@ -41,11 +48,12 @@ const [choice, setChoice] = useState([])
       
       <SearchBar placeholder="Baby got Yak!" 
       choice={choice} 
-      handleChange={handleChange}/>
+      handleChange={handleChange}
+      handleClick={handleClick}/>
 
       <Routes>
 
-        <Route path="/CocktailList" element={
+        <Route path="/CocktailList/:choice" element={
     <CocktailList 
     cocktails={cocktails}
     setCocktails={setCocktails}/>} />

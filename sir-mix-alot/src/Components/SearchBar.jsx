@@ -2,7 +2,7 @@ import React from 'react'
 import '../SearchBar.css'
 import SearchIcon from '@mui/icons-material/Search';
 
-function SearchBar ({placeholder, choice, handleChange}) {
+function SearchBar ({placeholder, choice, handleChange, handleClick}) {
 
 return (
 
@@ -12,9 +12,9 @@ return (
             value={choice[""]}
             onChange={handleChange}
             placeholder={placeholder}/>
-            <div className="searchIcon">
+            <button className="searchIcon" onClick={handleClick}>
                 <SearchIcon />
-            </div>
+            </button>
         </div>
         <div className="dataResult">
         </div>
@@ -28,3 +28,17 @@ return (
 
 export default SearchBar;
 
+{/* < div className= "search">
+{!choice ? (
+<div className="searchInputs">
+    <input type="text"  
+    //value={choice}
+    onChange={handleChange}
+    placeholder={placeholder}/>
+    <button className="searchIcon" onClick={handleClick}>
+        <SearchIcon />
+    </button>
+</div> ) :( 
+<div className="dataResult">
+</div>)}
+</div> */}

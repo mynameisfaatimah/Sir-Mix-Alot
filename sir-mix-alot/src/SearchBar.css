@@ -1,32 +1,48 @@
 .searchInput {
     margin-top: 105px;
     display: flex;
-   color: white;
+
 }
 
 .search input {
-    background-color: transparent;
+    background-color: white;
+    border-bottom: solid 2px;
     border: 0;
     border-radius: 2px; 
+    border-color: white ;
     border-top-right-radius: 0px;
     font-size: 18px;
-
+    font-style: italic;
+    padding: 0px 12px 10px;
+    border-bottom-color: blanchedalmond;
+    color: whitesmoke;
     padding: 15px;
     height: 30px;
     width: 200px;
 
 }
 
-.searchIcon {
-    height: 60px;
-    width: 50px;
-    background-color: transparent;
+button {
+    
     display: inline-block;
     align-items: center ;
+    text-rendering: auto;
+    color: maroon;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-image: initial;
 }
 
+
 input:focus {
-    outline: none;
+    outline: floralwhite;
 }
 
 .searchIcon svg {
