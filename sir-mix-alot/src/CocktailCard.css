@@ -1,13 +1,23 @@
+.card-container{
+    display:grid;
+    grid-gap: 300px;
+    justify-content: center
+}
 .cocktail-card {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
     display: ;
+    border: 2px solid #c57d47;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content:   ;
+    backdrop-filter: blur(8px);
+    margin-bottom: 20px;
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+    width: 300px;
+    height: 400px;
+   
+
   }
-  
+
   .cocktail-card h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -45,4 +55,3 @@
   .cocktail-card button:hover {
     background-color: #0069d9;
   }
-  
