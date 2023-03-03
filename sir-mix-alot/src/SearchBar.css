@@ -5,6 +5,7 @@
 }
 form{ 
     display:inline-flex;
+    
 
 }
 .search input {
@@ -21,7 +22,7 @@ form{
     color: #878a67;
     padding: 15px;
     height: 20px;
-    width: 250px;
+    width: 200px;
     vertical-align: top;
 
 }

@@ -43,14 +43,17 @@ export default function CocktailList (){
                     <div className="card-container">
                     <div key={cocktail.id} className="cocktail-card" >
                         
-                        <h1>{cocktail.name}</h1>
+                        <h1>{cocktail.name.toUpperCase()}</h1>
+                        <h4>Instructions:</h4>
                         <p dangerouslySetInnerHTML={{ __html: cocktail.instructions }}></p>
+                        <h4>Ingredients:</h4>
                         <ul>
+
                         {cocktail.ingredients.map((ingredient, index) => (
                             <li key={index}>{ingredient}</li>
                             ))}
                         </ul>
-                            <button>Select Cocktail</button>
+                            {/* <button>Select Cocktail</button> */}
                     </div>
 
                     </div>
