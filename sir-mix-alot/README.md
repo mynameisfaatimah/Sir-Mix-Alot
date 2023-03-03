@@ -5,7 +5,7 @@
 
 
 
-> Live demo [_here_](sir-mix-alot.surge.sh). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://sir-mix-alot.surge.sh). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
