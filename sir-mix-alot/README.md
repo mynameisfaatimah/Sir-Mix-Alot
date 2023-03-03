@@ -1,5 +1,5 @@
 # Sir-Mix-Alot
-> React App that uses a cocktail API to find arrays of cocktails based on the search of either the cocktail name or ingredients.
+> React App that takes users input and calls the cocktail API.
 
 ![](https://media0.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy-downsized.gif?cid=29caca75uv16t5zeby3eo7s7e7e73gk5vioomczxnh58aemn&rid=giphy-downsized.gif&ct=g)
 
@@ -22,69 +22,64 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
+- By entering a cocktail of choice either by name or liquor type the call returns up to ten recipe choices.
+- What problem does it (intend to) solve? - 
+       ~indecisvness at the bar or just being a great host 
 - What is the purpose of your project?
+        ~To give the user a variety of cocktails to try 
 - Why did you undertake it?
+        ~Hosting gatherings for friends and family I figured this would make 
+        deciding what drinks to serve easier. 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Axios - version 1.3.4
+- React Router Dom - version 6.8.1
+- JavaScript 
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Mobile Compatible
+- Renders Cocktail Searches
+
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./src/Image/ScreenShot.png)
+![Example screenshot2](./src/Image/ScreenShot2.png)
+![Example screenshot2](./src/Image/ScreenShot3.png)
+
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+-Fork and clone from git repository
+-From terminal inital startup run: npm i
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: √ in progress_ / _complete_ / _no longer being worked on_. 
+
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Enhance ui/ux
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- make app more mobile friendly
+- add like buttons and comments for recipes
 
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Many thanks to my instructor Jeremy Taubman at General Assembly and the TAs Kristina, Tiffany, Brittany, Tylus and Sebastian.
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by (link to personal profile here ) - feel free to contact me!
 
 
 <!-- Optional -->
