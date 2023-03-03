@@ -1,7 +1,7 @@
 # Sir-Mix-Alot
 > React App that uses a cocktail API to find arrays of cocktails based on the search of either the cocktail name or ingredients.
 
-https://media0.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy-downsized.gif?cid=29caca75uv16t5zeby3eo7s7e7e73gk5vioomczxnh58aemn&rid=giphy-downsized.gif&ct=g
+![](https://media0.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy-downsized.gif?cid=29caca75uv16t5zeby3eo7s7e7e73gk5vioomczxnh58aemn&rid=giphy-downsized.gif&ct=g)
 
 
 
