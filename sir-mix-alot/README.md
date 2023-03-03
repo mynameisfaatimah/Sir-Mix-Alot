@@ -48,8 +48,8 @@ List the ready features here:
 
 ## Screenshots
 ![Example screenshot](./src/Image/ScreenShot.png)
-![Example screenshot2](./src/Image/ScreenShot2.png)
-![Example screenshot2](./src/Image/ScreenShot3.png)
+![Example screenshot2](./src/Image/Screen Shot2.png)
+![Example screenshot2](./src/Image/Screen Shot3.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
