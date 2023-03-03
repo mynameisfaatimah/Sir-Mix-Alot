@@ -17,6 +17,7 @@ body {
     place-items: center;
     margin: 0;
 }
+
 .header-container{
 display: grid;
 width: 100%;

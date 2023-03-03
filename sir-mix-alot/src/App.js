@@ -9,19 +9,17 @@ import CocktailList from "./Components/CocktailList";
 const App = () => {
   const [cocktails, setCocktails] = useState([]);
   //const [selectedCocktail, setSelectedCocktail] = useState(null)
-  const [choice, setChoice] = useState([]);
-  //useEffect(() => {}, [choice])
+  const [choice, setChoice] = useState("");
 
   const handleChange = (e) => {
-    //console.log(choice)
-    setChoice({ ...choice, [e.target.id]: e.target.value });
+    setChoice(e.target.value);
   };
 
   let navigate = useNavigate();
 
   const handleClick = (e) => {
-    console.log(choice);
-    navigate(`/CocktailList/${choice[""]}`);
+    
+    navigate(`/CocktailList/${choice}`);
   };
 
   return (
@@ -55,4 +53,3 @@ const App = () => {
 
 export default App;
 
-//https://www.freecodecamp.org/news/build-a-search-filter-using-react-and-react-hooks/
