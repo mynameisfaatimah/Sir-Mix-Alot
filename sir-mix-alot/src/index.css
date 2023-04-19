@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    display: flex;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./Image/RedRoom.JPG");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #432f22;
+    background-position: center;
+    height: 100vh ;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.header-container{
+display: grid;
+width: 100%;
+margin-bottom: 60px;
+text-align:center;
+backdrop-filter: blur(8px);
+box-shadow: 0 3000px rgba(2, 0, 0, 0.679) inset;
+}
+.main-container{
+  display: grid;
+  box-shadow: 0 3000px rgba(2, 0, 0, 0.679) inset;
+  backdrop-filter: blur(8px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #6e2f1b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8c7c74;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.App {
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

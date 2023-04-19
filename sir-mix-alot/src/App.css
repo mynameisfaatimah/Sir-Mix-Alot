@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  color: #878a67;
+  font-family: 'Bitter', serif;
+}
+
+img {
+  max-width:150px;
+  margin: 2px;
+}
+.bg {
+  width: 200px; 
+  height: 200px;
+  background-size: cover;
+}
+
+a{
+  color: #c57d47 ;
+  background-color: #1e0a0a;
+  margin-top: 0px;
+  
+}
+a:hover {
+  border-bottom: 1px solid;
+  background: #878a67;
+  border-radius: 5px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
